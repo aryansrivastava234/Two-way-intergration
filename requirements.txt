@@ -10,6 +10,7 @@ alembic==1.12.1
 
 # Kafka
 kafka-python==2.0.2
+six==1.16.0
 
 # Stripe Integration
 stripe==7.8.0
@@ -24,6 +25,7 @@ python-dotenv==1.0.0
 # Data Validation
 pydantic==2.5.0
 pydantic-settings==2.1.0
+email-validator==2.1.0
 
 # Utilities
 python-dateutil==2.8.2
