@@ -43,3 +43,21 @@ htmlcov/
 # Kafka data
 kafka-data/
 zookeeper-data/
+# # Test folder and debug files
+# /test_*.py
+# /debug_*.py
+# /*_test.py
+# /*_debug.py
+# /customer_stripe_client.py
+# /minimal_*.py
+# /simple_*.py
+# /temp_*.py
+# /scratch_*.py
+# /playground_*.py
+
+# # Test folder specific ignores
+# tests/temp/
+# tests/debug/
+# tests/**/*_temp.py
+# tests/**/*_debug.py
+tests/**/*
