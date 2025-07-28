@@ -9,7 +9,7 @@ psycopg2-binary==2.9.9
 alembic==1.12.1
 
 # Kafka
-kafka-python==2.0.2
+kafka-python-ng==2.2.3
 six==1.16.0
 
 # Stripe Integration
@@ -41,8 +41,11 @@ flake8==6.1.0
 # Logging
 structlog==23.2.0
 
-# Background Tasks
-celery==5.3.4
+# JSON Processing
+orjson==3.9.10
 
-# Webhook Testing
-pyngrok==7.0.0
+# Security
+cryptography==41.0.7
+
+# Configuration
+typing-extensions==4.8.0

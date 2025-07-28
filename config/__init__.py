@@ -1,3 +1,7 @@
-from .settings import settings, database, kafka, stripe, app
+"""
+Fixed config/__init__.py - only imports what exists.
+"""
+from .settings import settings
 
-__all__ = ["settings", "database", "kafka", "stripe", "app"]
+# Only export what actually exists
+__all__ = ["settings"]

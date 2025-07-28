@@ -24,7 +24,7 @@ services:
 
   # Zookeeper for Kafka
   zookeeper:
-    image: confluentinc/cp-zookeeper:7.4.0
+    image: confluentinc/cp-zookeeper:7.5.0
     container_name: zenskar_zookeeper
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
@@ -35,7 +35,7 @@ services:
 
   # Kafka
   kafka:
-    image: confluentinc/cp-kafka:7.4.0
+    image: confluentinc/cp-kafka:7.5.0
     container_name: zenskar_kafka
     depends_on:
       zookeeper:
