@@ -1,4 +1,4 @@
-# Zenskar Customer Integration System
+# Customer Integration System
 
 A comprehensive customer data synchronization system that provides bidirectional sync between your application and Stripe, with real-time webhook support and conflict resolution.
 
@@ -79,7 +79,7 @@ This project implements all the specified requirements:
 
 1. **Clone and setup environment:**
    ```bash
-   cd Zenskar_Assignment
+   cd _Assignment
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    pip install -r requirements.txt
@@ -180,7 +180,7 @@ POSTGRES_HOST=localhost
 POSTGRES_PORT=5432
 POSTGRES_USER=user
 POSTGRES_PASSWORD=password
-POSTGRES_DB=zenskar_customer_integration
+POSTGRES_DB=customer_integration
 
 # Stripe
 STRIPE_SECRET_KEY=sk_test_...
