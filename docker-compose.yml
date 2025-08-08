@@ -4,11 +4,11 @@ services:
   # PostgreSQL Database
   postgres:
     image: postgres:15
-    container_name: zenskar_postgres
+    container_name: postgres
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-user}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-password}
-      POSTGRES_DB: ${POSTGRES_DB:-zenskar_customer_integration}
+      POSTGRES_DB: ${POSTGRES_DB:customer_integration}
       POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
     ports:
       - "${POSTGRES_PORT:-5432}:5432"
@@ -25,7 +25,7 @@ services:
   # Zookeeper for Kafka
   zookeeper:
     image: confluentinc/cp-zookeeper:7.5.0
-    container_name: zenskar_zookeeper
+    container_name: zookeeper
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
@@ -36,7 +36,7 @@ services:
   # Kafka
   kafka:
     image: confluentinc/cp-kafka:7.5.0
-    container_name: zenskar_kafka
+    container_name: kafka
     depends_on:
       zookeeper:
         condition: service_started
