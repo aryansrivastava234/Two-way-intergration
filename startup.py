@@ -9,7 +9,7 @@ orchestrating the initialization and monitoring of all required services includi
 - Kafka workers for event processing
 - Stripe webhook handlers
 
-Author: Zenskar Assignment
+Author: Aryan Srivastava
 Version: 1.0.0
 """
 
